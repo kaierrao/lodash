@@ -27,6 +27,7 @@ const CLONE_SYMBOLS_FLAG = 4
  * const shallow = clone(objects)
  * console.log(shallow[0] === objects[0])
  * // => true
+  浅克隆 调用了baseClone方法 value:数据源 CLONE_SYMBOLS_FLAG:标识位4
  */
 function clone(value) {
   return baseClone(value, CLONE_SYMBOLS_FLAG)
