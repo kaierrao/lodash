@@ -83,6 +83,7 @@ const hasOwnProperty = Object.prototype.hasOwnProperty
  * @param {boolean} [isDeep] Specify a deep clone.
  * @returns {Object} Returns the initialized clone.
  */
+// object:数据源  tag:数据类型 isDeep:是否是深克隆
 function initCloneByTag(object, tag, isDeep) {
   const Ctor = object.constructor
   switch (tag) {
